@@ -1,0 +1,13 @@
+<h1>Hello SIP ACADEMY</h1>
+
+<b class="classFormateur">Formatteur : {{ formateur }}</b>
+<br />
+<span>Organisme : {{ organisme }}</span>
+
+<h5>Total hours : {{ nbreHeures }}</h5>
+
+<ul>
+  <li *ngFor="let stagiaire of stagiaires">{{ stagiaire | uppercase }}</li>
+</ul>
+
+<button class="btn btn-success" (click)="display()">cliquer ici</button>

@@ -1,0 +1,23 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{ student.getName() }}</td>
+      <td>{{ student.getAge() }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<button type="button" class="btn btn-secondary" (click)="toggle()">
+  show/hide
+</button>
+<div style="border: dotted red 2px; background-color: aqua" *ngIf="show">
+  Une formation sur 3 frameworks : Spring, Angular et React Native!
+</div>
